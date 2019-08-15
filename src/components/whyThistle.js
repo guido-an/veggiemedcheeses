@@ -80,6 +80,7 @@ const WhyThistle = () => (
         font-size: 16px;
         position: relative;
         bottom: 20px
+        
       }
 
       .thistle-container span {

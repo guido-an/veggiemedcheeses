@@ -4,13 +4,7 @@ import Image2 from "../images/vegcheese-2.jpg"
 import Image3 from "../images/vegcheese-3.jpg"
 import Image4 from "../images/vegcheese-4.jpg"
 
-let photo = {
-  height: "300px",
-  backgroundRepeat: "no-repeat",
-  width: "100%",
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-}
+
 let gallery1 = {
   backgroundImage: `url(${Image1})`,
 }
