@@ -6,11 +6,15 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Hero from "../components/hero"
 import Gallery from "../components/gallery"
+import WhyThistle from "../components/whyThistle"
+import AboutTeam from "../components/aboutTeam"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero/>
+    <AboutTeam/>
+    <WhyThistle/>
     <Gallery/>
   </Layout>
 )

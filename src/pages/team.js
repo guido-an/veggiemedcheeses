@@ -29,7 +29,7 @@ const Team = () => (
      </div>   
      <div>
          <p>The geographic coverage of the VEGGIE-MED-CHEESES consortium is shown in the following figure: </p>
-         <img src={teamEurope} alt="team-europe"/>
+         <img className="team-img" src={teamEurope} alt="team-europe"/>
          </div>
 
      </section>
@@ -49,7 +49,7 @@ const Team = () => (
             margin-top: 60px;
              margin-bottom: 120px
          }
-         img{
+         .team-img{
              display: block;
              margin: 0 auto;
              position: relative;
@@ -69,10 +69,7 @@ const Team = () => (
              display: flex;
              justify-content: center;
          }
-         img{
-             left: 0;
-             margin-top: 20px
-         }
+       
          a{
              margin-bottom: -15px !important
          }

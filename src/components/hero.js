@@ -18,7 +18,7 @@ const Hero = () => (
       {`
         .hero {
           text-align: center;
-          height: 500px;
+          height: 80vh;
           display: flex;
           justify-content: center;
         }

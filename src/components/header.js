@@ -88,7 +88,7 @@ class Header extends React.Component {
          .mobile-nav{
            display: flex;
            justify-content: space-between;
-           padding: 20px
+           padding: 20px;
          }
 
           .desktop-menu {
@@ -129,6 +129,7 @@ class Header extends React.Component {
             .desktop-menu {
               display: flex;
               justify-content: space-around;
+            
             }
             .desktop-menu ul{
               display: flex;

@@ -637,9 +637,7 @@ a {
 a:hover{
   color:#79a43d
 }
-p{
-  color: #212529;
-}
+
 li{
   list-style: none;
 }
@@ -649,6 +647,10 @@ strong{
 h1{
   color: #222;
   font-weight: bold
+}
+h2{
+  font-size: 38px;
+  font-weight: 700 ;
 }
 
 .container{
