@@ -3,11 +3,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Title from "../components/title"
 import conceptImg from "../images/concept.png"
+import { Helmet } from "react-helmet"
 
 
 const Concept = () => (
   <Layout>
-    <SEO title="Concept" />
+
+  <Helmet>
+      <title>Our Concept | VeggieMedCheeses</title>
+    </Helmet>
     <section className="concept">
       <Title title="CONCEPT"/>
       <div className="concept-wrapper container">

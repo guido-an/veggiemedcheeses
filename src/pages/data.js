@@ -1,9 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import Title from "../components/title"
+import { Helmet } from "react-helmet"
+
 
 const Data = () => (
     <Layout>
+    <Helmet>
+      <title>Data | VeggieMedCheeses</title>
+    </Helmet>
         <Title title="PILOT ON OPEN RESERCH DATA"/>
         <div className="data-wrapper container">
         <div>

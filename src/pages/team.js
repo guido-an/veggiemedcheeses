@@ -8,11 +8,15 @@ import creaLogo from "../images/crea-logo.png"
 import sousseLogo from "../images/sousse-logo.jpg"
 import hellenicLogo from "../images/hellenic-logo.png"
 import teamEurope from "../images/team-europe.jpg"
+import { Helmet } from "react-helmet"
 
 
 
 const Team = () => (
     <Layout>
+    <Helmet>
+      <title>Our Team | VeggieMedCheeses</title>
+    </Helmet>
         <div>
     <Title title="OUR TEAM"/>
     <p id="subtitle-team">The VEGGIE-MED-CHEESES consortium consists of 5 Partner organizations based in 4 Mediterranean countries (Italy: Coordinator and P1; Spain: P2; Greece: P3; and Tunisia: P4) where traditional cheese making is an important element of goat and sheep farmers food value chains.</p>
