@@ -6,6 +6,8 @@ import conceptImg from "../images/concept.png"
 import { Helmet } from "react-helmet"
 
 
+
+
 const Concept = () => (
   <Layout>
 
@@ -29,6 +31,7 @@ const Concept = () => (
         
       </div>
       <img src={conceptImg} alt="concept-veggie-cheese"/>
+    
     </section>
 
     <style jsx="true">{`
@@ -84,7 +87,4 @@ const Concept = () => (
     `}</style>
   </Layout>
 )
-
-
-export default Concept
 

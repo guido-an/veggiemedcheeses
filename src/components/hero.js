@@ -1,8 +1,8 @@
 import React from "react"
 import Button from "./button"
 
-const Hero = () => (
 
+const Hero = () => (
 
   <section className="hero">
     <div className="hero-wrapper">
