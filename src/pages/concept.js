@@ -88,3 +88,4 @@ const Concept = () => (
   </Layout>
 )
 
+export default Concept
