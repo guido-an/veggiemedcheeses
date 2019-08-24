@@ -74,9 +74,9 @@ class Header extends React.Component {
             <li>
                 <Link to="/team">Team</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/">News</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/data">Data</Link>
               </li>
@@ -129,7 +129,6 @@ class Header extends React.Component {
             .desktop-menu {
               display: flex;
               justify-content: space-around;
-            
             }
             .desktop-menu ul{
               display: flex;
