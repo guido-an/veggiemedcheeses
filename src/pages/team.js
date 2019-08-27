@@ -1,6 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import Title from "../components/title"
+import ProfileImg from "../components/profileImg"
+import clementiFrancesca from "../images/clementi-francesca.jpg"
+import mariaDiCostanzo from "../images/maria-di-costanzo.jpg"
+import massimoMozzon from "../images/massimo-mozzon.jpg"
+import nadiaRaffaelli from "../images/nadia-raffaelli.jpg"
+import andreaOsimani from "../images/andrea-osimani.jpg"
+import luciaAquilanti2 from "../images/lucia-aquilanti-2.jpg"
+
 import PartnerBox from "../components/partnerBox"
 import univpmLogo from "../images/univpm-logo.png"
 import murciaLogo from "../images/universidad-murcia-logo.png"
@@ -9,8 +17,6 @@ import sousseLogo from "../images/sousse-logo.jpg"
 import hellenicLogo from "../images/hellenic-logo.png"
 import teamEurope from "../images/team-europe.jpg"
 import { Helmet } from "react-helmet"
-
-
 
 const Team = () => (
     <Layout>
@@ -30,7 +36,7 @@ const Team = () => (
         <div id="section-2">
         <PartnerBox img={hellenicLogo} name="Hellenic Agricultural Organization" websiteName="www.elgo.gr" websiteUrl="http://excellence.minedu.gov.gr/thales/en/institutions/hellenic-agricultural-organization-demeter" url="/hellenic-agricultural-organization"/>
         <PartnerBox img={sousseLogo} name="Sousse University" websiteName="www.uc.rnu.tn" websiteUrl="http://www.uc.rnu.tn" url="/sousse-university"/>
-     </div>   
+     </div>
      <div>
          <p>The geographic coverage of the VEGGIE-MED-CHEESES consortium is shown in the following figure: </p>
          <img className="team-img" src={teamEurope} alt="team-europe"/>
@@ -67,20 +73,22 @@ const Team = () => (
             #section-1{
              display: flex;
              justify-content: center;
-             
+
          }
          #section-2{
              display: flex;
              justify-content: center;
          }
-       
+
          a{
              margin-bottom: -15px !important
          }
          }
-         
+
          `}</style>
      </Layout>
 )
+
+
 
 export default Team

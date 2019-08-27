@@ -660,13 +660,17 @@ h2{
 .partner-page-section{
   margin-top: 40px
 }
-
+ .text-container{
+    margin: 0 auto;
+    width: 95%
+  }
 
 @media(min-width:1200px){
   .container{
     max-width: 80%;
   }
-    .partner-page-section{
-      width: 50%
-    }      
+   .text-container{
+    width: 70%;
+    }
+    
 }

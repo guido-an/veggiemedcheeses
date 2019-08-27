@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
-      <div
+      <div className="footer-logo-container"
         style={{ marginBottom: "20px", marginTop: "10px" }}
       >
         <a href="https://ec.europa.eu/commission/index_en" target="_blank">
@@ -59,6 +59,10 @@ const Footer = () => (
         @media (min-width: 1200px) {
           .footer-container {
             width: 70%;
+          }
+          .footer-logo-container{
+            display: flex;
+            justify-content: center
           }
           .footer-contact a {
             padding-bottom: 60px;

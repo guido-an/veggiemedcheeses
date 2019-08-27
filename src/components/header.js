@@ -64,7 +64,7 @@ class Header extends React.Component {
         <nav className="desktop-menu">
           <Link to="/">
             {" "}
-            <img src={logo} alt="logo-veggie-cheese" width="240px" />
+            <img className="logo" src={logo} alt="logo-veggie-cheese" width="240px" />
           </Link>
           <ul>
             <li>
@@ -131,6 +131,10 @@ class Header extends React.Component {
             .mobile-menu {
               display: none;
             }
+            .logo{
+              position: relative;
+              bottom: 10px
+            }
             .desktop-menu {
               display: flex;
               justify-content: space-around;
@@ -138,7 +142,7 @@ class Header extends React.Component {
             .desktop-menu ul {
               display: flex;
               position: relative;
-              top: 10px;
+              
             }
             .desktop-menu ul li {
               margin: 20px;
