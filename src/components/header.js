@@ -17,23 +17,25 @@ class Header extends React.Component {
     return (
       <header>
         <section className="mobile-nav">
-          <Link to="/"> <img src={logo} alt="logo-veggie-cheese" width="240px" /></Link>
-        {this.state.visible ? (
-          <div onClick={this.showMobileMenu} className="burger-icon-close">
-            <span>X</span>
-          </div>
-        ) : (
-          <div onClick={this.showMobileMenu} className="burger-icon-open">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        )}
+          <Link to="/">
+            {" "}
+            <img src={logo} alt="logo-veggie-cheese" width="240px" />
+          </Link>
+          {this.state.visible ? (
+            <div onClick={this.showMobileMenu} className="burger-icon-close">
+              <span>X</span>
+            </div>
+          ) : (
+            <div onClick={this.showMobileMenu} className="burger-icon-open">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          )}
         </section>
 
         {this.state.visible ? (
           <nav className="mobile-menu">
-            
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -60,7 +62,10 @@ class Header extends React.Component {
         )}
 
         <nav className="desktop-menu">
-        <Link to="/"> <img src={logo} alt="logo-veggie-cheese" width="240px" /></Link>
+          <Link to="/">
+            {" "}
+            <img src={logo} alt="logo-veggie-cheese" width="240px" />
+          </Link>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -72,56 +77,56 @@ class Header extends React.Component {
               <Link to="/concept">Concept</Link>
             </li>
             <li>
-                <Link to="/team">Team</Link>
-              </li>
-              {/* <li>
+              <Link to="/team">Team</Link>
+            </li>
+            {/* <li>
                 <Link to="/">News</Link>
               </li> */}
-              <li>
-                <Link to="/data">Data</Link>
-              </li>
+            <li>
+              <Link to="/data">Data</Link>
+
+            </li>
           </ul>
         </nav>
 
         <style jsx="true">{`
-      
-         .mobile-nav{
-           display: flex;
-           justify-content: space-between;
-           padding: 20px;
-         }
+          .mobile-nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+          }
 
           .desktop-menu {
             display: none;
           }
-          header a:hover{
-            color: #222 !important
+          header a:hover {
+            color: #222 !important;
           }
           .burger-icon-close span {
             font-size: 26px;
             color: #777;
             position: relative;
             top: 50px;
-            right: 20px
+            right: 20px;
           }
           .burger-icon-open {
             position: relative;
             top: 55px;
-            right: 10px
+            right: 10px;
           }
-    
+
           .burger-icon-open span {
             width: 25px;
             border: 1px solid #777;
             margin: 4px;
             display: block;
           }
-          .mobile-menu li{
-            margin: 10px
+          .mobile-menu li {
+            margin: 10px;
           }
           @media (min-width: 1200px) {
-            .mobile-nav{
-              display: none
+            .mobile-nav {
+              display: none;
             }
             .mobile-menu {
               display: none;
@@ -130,16 +135,16 @@ class Header extends React.Component {
               display: flex;
               justify-content: space-around;
             }
-            .desktop-menu ul{
+            .desktop-menu ul {
               display: flex;
               position: relative;
-              top:10px
+              top: 10px;
             }
-            .desktop-menu ul li{
-              margin: 20px
+            .desktop-menu ul li {
+              margin: 20px;
             }
-            .desktop-menu ul li:hover{
-              border-bottom: 2px solid #79a43d
+            .desktop-menu ul li:hover {
+              border-bottom: 2px solid #79a43d;
             }
           }
         `}</style>
