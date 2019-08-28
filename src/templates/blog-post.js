@@ -21,7 +21,8 @@ export default ({ data }) => {
       <style jsx="true">{`
           .blog-post p{
               color: #777;
-              margin: 0 10px
+              margin: 0 10px;
+              line-height: 27px
           }
           .blog-post h1{
               text-align: center;
