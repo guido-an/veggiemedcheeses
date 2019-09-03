@@ -1,4 +1,4 @@
-<h1>veggiemedcheeses.com</h1>
+<a href="https://veggiemedcheeses.com"><h2>veggiemedcheeses.com</h2></a>
 <p>Gatsby.js website</p>
 
 
