@@ -1,7 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
+import ProfileImg from "../components/profileImg"
+
 import hellenicLogo from "../images/hellenic-logo.png"
 import akisPhoto from "../images/akis.jpg"
+import evridiki from "../images/evridiki-boukouvala.jpg"
+import george from "../images/george-samouris.jpg"
+import vafeas from "../images/vafeas.jpg"
+import loukia from "../images/loukia.jpg"
+import maria from "../images/maria.jpg"
+import virginia from "../images/virginia.jpg"
 
 const Hellenic = () => (
   <Layout>
@@ -95,6 +103,40 @@ const Hellenic = () => (
           }}
         />
       </div>
+      <div className="team-container" style={{ marginTop: "20px" }}>
+        <ProfileImg
+          img={evridiki}
+          name="Evridiki Boukouvala"
+          organization="Hellenic Agricultural Organization"
+        />
+        <ProfileImg
+          img={george}
+          name="George Samouris"
+          organization="Hellenic Agricultural Organization"
+        />
+        <ProfileImg
+          img={vafeas}
+          name="George Vafeas"
+          organization="Hellenic Agricultural Organization"
+        />
+      </div>
+      <div className="team-container" style={{ marginTop: "20px" }}>
+        <ProfileImg
+          img={loukia}
+          name="Loukia Ekateriniadou"
+          organization="Hellenic Agricultural Organization"
+        />
+        <ProfileImg
+          img={maria}
+          name="Maria Ioannidou"
+          organization="Hellenic Agricultural Organization"
+        />
+        <ProfileImg
+          img={virginia}
+          name="Virginia Giantzi"
+          organization="Hellenic Agricultural Organization"
+        />
+      </div>
     </section>
     <style jsx="true">{`
       .website {
@@ -116,6 +158,12 @@ const Hellenic = () => (
       }
       .hellenic-section li {
         list-style: circle;
+      }
+
+      @media(min-width:1200px){
+      .team-container{
+         display: flex;
+         justify-content: space-around
       }
     `}</style>
   </Layout>

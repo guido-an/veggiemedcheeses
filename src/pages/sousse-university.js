@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from "../components/layout"
 import sousseLogo from "../images/sousse-logo.jpg"
+import bouthaina from "../images/bouthaina.jpg"
+
 
 
 const Sousse = () => (
@@ -21,6 +23,8 @@ const Sousse = () => (
      Skype contact: Al Mohandes Dridi Bouthaina<br/>
      Phone:  00 216 73 327 546
      </p>
+     <img src={bouthaina} style={{borderRadius: "50%",  boxShadow:"0px 0px 20px 0px rgba(12,5,5,0.4)"}}/>
+
 
 </div>
     </section>
