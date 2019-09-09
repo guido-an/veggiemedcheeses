@@ -25,8 +25,8 @@ const Footer = () => (
         <div>
           <strong>Email</strong>
           <br />
-          <a href="mailto:l.aquilanti@staff.univpn.it">
-            l.aquilanti@staff.univpn.it
+          <a href="mailto:l.aquilanti@staff.univpm.it">
+            l.aquilanti@staff.univpm.it
           </a>
         </div>
       </div>
