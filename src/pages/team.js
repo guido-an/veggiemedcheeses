@@ -30,7 +30,7 @@ const Team = () => (
         <PartnerBox img={sousseLogo} name="Sousse University" websiteName="www.uc.rnu.tn" websiteUrl="http://www.uc.rnu.tn" url="/sousse-university"/>
      </div>
      <div>
-         <p>The geographic coverage of the VEGGIE-MED-CHEESES consortium is shown in the following figure: </p>
+         <p>The geographi coverage of the VEGGIE-MED-CHEESES consortium is shown in the following figure: </p>
          <img className="team-img" src={teamEurope} alt="team-europe"/>
          </div>
 
