@@ -47,6 +47,12 @@ module.exports = {
         useACF: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://veggiemedcheeses.us4.list-manage.com/subscribe/post?u=b4c49b4080d8bbdf43682e3d8&amp;id=aa85edd348',
+      },
+    },
     
   ],
 }

@@ -3,6 +3,8 @@ import logo from "../images/veggie-med-cheeses-logo.png"
 import logoEuropa from "../images/european-commission-logo.jpg"
 import logoPrima from "../images/prima-logo.jpg"
 import { Link } from "gatsby"
+import Newsletter from "./newsletter"
+
 const Footer = () => (
   <footer className="footer">
     <div className="footer-container">
@@ -30,7 +32,9 @@ const Footer = () => (
           </a>
         </div>
       </div>
+      <Newsletter/>
     </div>
+   
     <style jsx="true">
       {`
         .footer {
@@ -52,10 +56,7 @@ const Footer = () => (
           color: #222 !important;
           margin: 40px 10px 10px;
         }
-        .footer-contact a {
-          display: block;
-          padding-bottom: 80px;
-        }
+        
         @media (min-width: 1200px) {
           .footer-container {
             width: 70%;
@@ -64,9 +65,7 @@ const Footer = () => (
             display: flex;
             justify-content: center
           }
-          .footer-contact a {
-            padding-bottom: 60px;
-          }
+        
         }
       `}
     </style>
