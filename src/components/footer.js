@@ -2,6 +2,7 @@ import React from "react"
 import logo from "../images/veggie-med-cheeses-logo.png"
 import logoEuropa from "../images/european-commission-logo.jpg"
 import logoPrima from "../images/prima-logo.jpg"
+import trelloLogo from "../images/trello-logo.png"
 import { Link } from "gatsby"
 import Newsletter from "./newsletter"
 
@@ -21,7 +22,7 @@ const Footer = () => (
           <img src={logoPrima} alt="logo-prima" width="240px" />
         </a>
       </div>
-
+         <a href=" https://trello.com/b/BfZlqB3t" target="_blank"><img src={trelloLogo} width="50px"></img></a>
       <p>Do you want to have more information? Please contact us.</p>
       <div className="footer-contact">
         <div>
@@ -59,7 +60,7 @@ const Footer = () => (
         
         @media (min-width: 1200px) {
           .footer-container {
-            width: 70%;
+            width: 75%;
           }
           .footer-logo-container{
             display: flex;
