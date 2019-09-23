@@ -1,4 +1,4 @@
-<h1>Made with Gatsby.js</h1>
+<h1>Website made with Gatsby.js</h1>
 <a href="https://veggiemedcheeses.com"><p>veggiemedcheeses.com</p></a>
 
 
