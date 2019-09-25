@@ -31,7 +31,7 @@ const Hellenic = () => (
             DEMETER)
           </strong>
         </p>
-        <p>
+        <p style={{color: "#777"}}>
           Veterinary Research Institute of Thessaloniki, established in 1997, is
           a research unit of the Hellenic Agricultural Organization DIMITRA
           (former NAGREF).
@@ -84,7 +84,7 @@ const Hellenic = () => (
         </p>
       </div>
       <div className="coordinator">
-        <p>
+        <p style={{color: "#777"}}>
           <strong>COORDINATOR and Principal Investigator of DEMETER</strong>
           <br />
           Dr Akis Psomas
@@ -149,7 +149,6 @@ const Hellenic = () => (
         display: block;
       }
       p {
-        color: #777 !important;
         line-height: 25px;
       }
       .coordinator {
