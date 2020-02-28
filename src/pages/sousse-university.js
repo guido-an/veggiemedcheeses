@@ -5,6 +5,7 @@ import ProfileImg from '../components/profileImg'
 import Divider from '../components/divider'
 import bouthaina from '../images/bouthaina.jpg'
 import rabiaa from '../images/rabiaa.jpg'
+import ismahen from '../images/ismahen-essaidi.jpg'
 
 const Sousse = () => (
   <Layout>
@@ -34,6 +35,12 @@ const Sousse = () => (
             name='Dott.ssa Raabia Haouala'
             organization='University of Sousse'
           />
+          <ProfileImg
+            style={{ width: '50%' }}
+            img={ismahen}
+            name='Ismahen Essaidi'
+            organization='University of Sousse'
+          />
         </div>
       </div>
     </section>
@@ -59,7 +66,12 @@ const Sousse = () => (
           .hellenic-section li{
               list-style: circle
           }
-        
+          @media (min-width: 1200px) {
+        .team-container {
+          display: flex;
+          justify-content: space-around;
+        }
+      }
           
           `}
     </style>
