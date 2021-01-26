@@ -56,7 +56,7 @@ class Header extends React.Component {
                 <Link to="/data">Data</Link>
               </li>
               <li>
-                <Link to="/pensiero-per-silvia">Pensiero Per Silvia</Link>
+                <Link to="/for-silvia">For Silvia</Link>
               </li>
             </ul>
           </nav>
@@ -90,7 +90,7 @@ class Header extends React.Component {
 
             </li>
             <li>
-                <Link to="/pensiero-per-silvia">Pensiero Per Silvia</Link>
+                <Link to="/for-silvia">For Silvia</Link>
               </li>
           </ul>
         </nav>
