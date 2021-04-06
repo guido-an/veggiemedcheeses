@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet'
 
 export default ({ data }) => {
   const news = data.allWordpressPost.edges.filter(post => {
-    if (post.node.categories[0].name === 'news') {
+    if (post.node.categories[0].name === 'publications') {
       return post
     }
   })
@@ -16,11 +16,11 @@ export default ({ data }) => {
       <Helmet>
         <title>Our Mission | VeggieMedCheeses</title>
       </Helmet>
-      <Title title='NEWS' />
+      <Title title='PUBLICATIONS' />
       <section className='container blog-section' style={{ marginTop: '40px', marginBottom: '180px' }}>
         {news.map(({ node }) => (
           <div key={node.id} style={{ marginBottom: '60px' }}>
-            <h3>{node.title}</h3>
+            <h3>{node.title.toUpperCase()}</h3>
             <div className='blog-excerpt' dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             <Link to={node.slug}>
               <p>> Read more</p>

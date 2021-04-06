@@ -53,6 +53,9 @@ class Header extends React.Component {
                 <Link to="/">News</Link>
               </li>
               <li>
+                <Link to="/publications">Publications</Link>
+              </li>
+              <li>
                 <Link to="/data">Data</Link>
               </li>
               <li>
@@ -84,6 +87,9 @@ class Header extends React.Component {
             </li>
             <li>
                 <Link to="/news">News</Link>
+              </li>
+            <li>
+                <Link to="/publications">Publications</Link>
               </li>
             <li>
               <Link to="/data">Data</Link>
