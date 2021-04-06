@@ -38,6 +38,9 @@ color: #777;
 position: relative;
 bottom: 10px
 }
+.more-link {
+    display: none
+}
 @media(min-width:1200px){
 .blog-section{
 width: 50%
