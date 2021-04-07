@@ -8,13 +8,24 @@ import Image6 from '../images/overview.jpg'
 import Image7 from '../images/THISTLE-FLOWERS.jpg'
 import Image8 from '../images/THISTLE-SEEDS-GERMINATION.jpg'
 import Image9 from '../images/THISTLE-SEEDS.jpg'
+import Image10 from '../images/Cynara-humilis-3.jpg'
+import Image11 from '../images/DSC_1141.jpg'
+import Image12 from '../images/IMG-20200219-WA0007.jpg'
 
 const Gallery = () => (
 
   <section className='gallery'>
     <div className='photo-container'>
-      <img src={Image1} />
+      <img src={Image10} />
       <p>Cynara Humilis</p>
+    </div>
+    <div className='photo-container'>
+      <img src={Image11} />
+      <p />
+    </div>
+    <div className='photo-container'>
+      <img src={Image6} />
+      <p>Overview</p>
     </div>
     <div className='photo-container'>
       <img src={Image2} />
@@ -25,16 +36,16 @@ const Gallery = () => (
       <p>Germinated Onopordum tauricum</p>
     </div>
     <div className='photo-container'>
+      <img src={Image1} />
+      <p>Cynara Humilis</p>
+    </div>
+    <div className='photo-container'>
       <img src={Image4} />
       <p>Onopordum platylepis after transplantation in pots with soil</p>
     </div>
     <div className='photo-container'>
       <img src={Image5} />
       <p>Onopordum platylepis spontaneously growing in Tunisia</p>
-    </div>
-    <div className='photo-container'>
-      <img src={Image6} />
-      <p>Overview</p>
     </div>
     <div className='photo-container'>
       <img src={Image7} />
@@ -47,6 +58,11 @@ const Gallery = () => (
     <div className='photo-container'>
       <img src={Image9} />
       <p>Thistle Seeds</p>
+    </div>
+
+    <div className='photo-container'>
+      <img src={Image12} />
+      <p />
     </div>
     <style jsx='true'>{`
        .gallery{
