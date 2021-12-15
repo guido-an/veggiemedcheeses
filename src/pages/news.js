@@ -22,7 +22,7 @@ export default ({ data }) => {
           <div key={node.id} style={{ marginBottom: '60px' }}>
             <h3>{node.title}</h3>
             <div className='blog-excerpt' dangerouslySetInnerHTML={{ __html: node.excerpt }} />
-            <Link to={node.slug}>
+            <Link to={`/${node.slug}`}>
               <p>> Read more</p>
             </Link>
             <div style={{ borderBottom: '2px solid #f7f7f7', paddingTop: '20px' }} />

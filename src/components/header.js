@@ -50,13 +50,24 @@ class Header extends React.Component {
                 <Link to="/team">Team</Link>
               </li>
               <li>
-                <Link to="/">News</Link>
+                <Link to="/news">News</Link>
               </li>
               <li>
                 <Link to="/publications">Publications</Link>
               </li>
               <li>
                 <Link to="/data">Data</Link>
+              </li>
+
+              <li>
+                <Link to="/press">Press</Link>
+              </li>
+              <li>
+                <Link to="/newsletter">Newsletter</Link>
+              </li>
+             
+              <li>
+                <Link to="/gallery">Gallery</Link>
               </li>
               <li>
                 <Link to="/for-silvia">For Silvia</Link>
@@ -93,8 +104,17 @@ class Header extends React.Component {
               </li>
             <li>
               <Link to="/data">Data</Link>
-
             </li>
+            <li>
+                <Link to="/press">Press</Link>
+              </li>
+            <li>
+                <Link to="/newsletter">Newsletter</Link>
+              </li>
+           
+              <li>
+                <Link to="/gallery">Gallery</Link>
+              </li>
             <li>
                 <Link to="/for-silvia">For Silvia</Link>
               </li>

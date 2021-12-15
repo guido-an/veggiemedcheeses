@@ -6,18 +6,18 @@ import Title from '../components/title'
 import { Helmet } from 'react-helmet'
 
 export default ({ data }) => {
-  console.log(data, 'data')
   const news = data.allWordpressPost.edges.filter(post => {
-    if (post.node.categories[0].name === 'publications') {
+    if (post.node.categories[0].name === 'press') {
       return post
     }
   })
+  console.log(news)
   return (
     <Layout>
       <Helmet>
         <title>Our Mission | VeggieMedCheeses</title>
       </Helmet>
-      <Title title='PUBLICATIONS' />
+      <Title title='Press' />
       <section className='container blog-section' style={{ marginTop: '40px', marginBottom: '180px' }}>
         {news.map(({ node }) => (
           <div key={node.id} style={{ marginBottom: '60px' }}>
@@ -31,27 +31,28 @@ export default ({ data }) => {
         ))}
       </section>
       <style jsx='true'>{`
-      .blog-section{
-         width: 95%;
-      }
-      .blog-excerpt{
-        color: #777;
-        position: relative;
-        bottom: 10px
-      }
-      .more-link {
-          display: none
-      }
-      @media(min-width:1200px){
-      .blog-section{
-         width: 50%
-        }
-      }
+.blog-section{
+width: 95%;
+}
+.blog-excerpt{
+color: #777;
+position: relative;
+bottom: 10px
+}
+.more-link {
+    display: none
+}
+@media(min-width:1200px){
+.blog-section{
+width: 50%
+}
+}
 `}
       </style>
     </Layout>
   )
 }
+
 export const pageQuery = graphql`
 query {
   allWordpressPost {
@@ -69,22 +70,3 @@ query {
  }
 }
 `
-
-
-// export const pageQuery = graphql`
-// query {
-//   allWordpressPost {
-//     edges {
-//       node {
-//        categories {
-//        name
-//       }
-//      title
-//      excerpt
-//      slug
-//      id
-//     }
-//   }
-//  }
-// }
-// `
