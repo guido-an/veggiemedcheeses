@@ -29,6 +29,7 @@ export default ({ data }) => {
           </div>
         ))}
       </section>
+      
       <style jsx='true'>{`
 .blog-section{
 width: 95%;
