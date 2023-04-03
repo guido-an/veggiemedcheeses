@@ -11,7 +11,6 @@ import { Helmet } from 'react-helmet';
 
 const IndexPage = () => (
   <Layout>
-  
     <Helmet>
           <title>VeggieMedCheeses | The New Era of Cheese</title>
       </Helmet>
