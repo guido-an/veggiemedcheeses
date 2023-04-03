@@ -23,13 +23,13 @@ export default ({ data }) => {
             <h3>{node.title}</h3>
             <div className='blog-excerpt' dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             <Link to={`/${node.slug}`}>
-              <p> {'> Read more'}</p>
+              <p> > Read more</p>
             </Link>
             <div style={{ borderBottom: '2px solid #f7f7f7', paddingTop: '20px' }} />
           </div>
         ))}
       </section>
-      
+
       <style jsx='true'>{`
 .blog-section{
 width: 95%;
