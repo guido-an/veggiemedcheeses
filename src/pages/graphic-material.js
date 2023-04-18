@@ -13,7 +13,6 @@ export default () => {
         <title>Our Mission | VeggieMedCheeses</title>
       </Helmet>
       <Title title='Graphic Materials'/>
-
        <div className="container">
         <div className="newsletter-container">
             <h3>Project Downloadable Flyer</h3>
