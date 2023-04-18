@@ -58,7 +58,9 @@ class Header extends React.Component {
               <li>
                 <Link to="/data">Data</Link>
               </li>
-
+              <li>
+                <Link to="/graphic-material">Graphic Materials</Link>
+              </li>
               <li>
                 <Link to="/press">Press</Link>
               </li>
@@ -106,6 +108,9 @@ class Header extends React.Component {
               <Link to="/data">Data</Link>
             </li>
             <li>
+                <Link to="/graphic-material">Graphic Materials</Link>
+              </li>
+            <li>
                 <Link to="/press">Press</Link>
               </li>
             <li>
@@ -118,6 +123,7 @@ class Header extends React.Component {
             <li>
                 <Link to="/for-silvia">For Silvia</Link>
               </li>
+              
           </ul>
         </nav>
 
