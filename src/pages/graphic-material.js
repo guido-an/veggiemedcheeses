@@ -17,15 +17,15 @@ export default () => {
        <div className="container">
         <div className="newsletter-container">
             <h3>Project Downloadable Flyer</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2023/04/Project-downloadable-flyer.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2023/04/Project-downloadable-flyer.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Project Printable Trifold Flyer</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2023/04/Project-printable-trifold-flyer.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2023/04/Project-printable-trifold-flyer.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Printable Final Workshop Agenta Trifold-Flyer</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2023/04/Printable-final-workshop-agenta-trifold-flyer.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2023/04/Printable-final-workshop-agenta-trifold-flyer.pdf" target="_blank">open link</a></p>
         </div>
        </div>
       

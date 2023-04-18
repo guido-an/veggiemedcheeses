@@ -17,43 +17,43 @@ export default () => {
        <div className="container">
         <div className="newsletter-container">
             <h3>Newsletter 1</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-1.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-1.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 2</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-2.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-2.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 3</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-3.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-3.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 4</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-4.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-4.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 5</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-5.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-5.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 6</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-6.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-6.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 7</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-7.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-7.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 8</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-8.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-8.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 9</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-9.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-9.pdf" target="_blank">open link</a></p>
         </div>
         <div className="newsletter-container">
             <h3>Newsletter 10</h3>
-            <p>Find out more: <a href="http://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-10.pdf" target="_blank">open link</a></p>
+            <p>Find out more: <a href="https://blog.veggiemedcheeses.com/wp-content/uploads/2021/12/NEWSLETTER-10.pdf" target="_blank">open link</a></p>
         </div>
        </div>
       
