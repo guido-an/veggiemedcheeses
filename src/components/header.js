@@ -1,10 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import logo from "../images/veggie-med-cheeses-logo.png"
 
 class Header extends React.Component {
   state = {
     visible: false,
+    isDropDownOpen: false,
+  }
+
+  toggleDropDownOptions = () => {
+    this.setState({ isDropDownOpen: !this.state.isDropDownOpen })
   }
 
   showMobileMenu = () => {
@@ -14,6 +19,21 @@ class Header extends React.Component {
   }
 
   render() {
+    const deliverablesList = this.props?.site?.edges.filter(post => {
+      if (post.node.categories[0].name === "Deliverables") {
+        return post
+      }
+    })
+    const deliverablesOptions = deliverablesList?.map(deliverable => {
+      return (
+        <Link
+          to={`/deliverables/${deliverable?.node?.slug}`}
+          state={deliverable}
+        >
+          <li>{deliverable?.node?.title}</li>
+        </Link>
+      )
+    })
     return (
       <header>
         <section className="mobile-nav">
@@ -58,6 +78,25 @@ class Header extends React.Component {
               <li>
                 <Link to="/data">Data</Link>
               </li>
+              <li
+                className="deliverables-menu"
+                onClick={this.toggleDropDownOptions}
+              >
+                <div className="deliverables-options-mobile-wrap">
+                  <span>Deliverables </span>
+                  <span
+                    className={`downward-arrow-icon-${this.state.isDropDownOpen}`}
+                  >
+                    {/* arrow right hex code */}
+                    &#10148;
+                  </span>
+                </div>
+                {this.state.isDropDownOpen ? (
+                  <ul className="deliverables-drop-down">
+                    {deliverablesOptions}
+                  </ul>
+                ) : null}
+              </li>
               <li>
                 <Link to="/graphic-material">Graphic Materials</Link>
               </li>
@@ -67,7 +106,7 @@ class Header extends React.Component {
               <li>
                 <Link to="/newsletter">Newsletter</Link>
               </li>
-             
+
               <li>
                 <Link to="/gallery">Gallery</Link>
               </li>
@@ -83,7 +122,12 @@ class Header extends React.Component {
         <nav className="desktop-menu">
           <Link to="/">
             {" "}
-            <img className="logo" src={logo} alt="logo-veggie-cheese" width="240px" />
+            <img
+              className="logo"
+              src={logo}
+              alt="logo-veggie-cheese"
+              width="240px"
+            />
           </Link>
           <ul>
             <li>
@@ -99,35 +143,71 @@ class Header extends React.Component {
               <Link to="/team">Team</Link>
             </li>
             <li>
-                <Link to="/news">News</Link>
-              </li>
+              <Link to="/news">News</Link>
+            </li>
             <li>
-                <Link to="/publications">Publications</Link>
-              </li>
+              <Link to="/publications">Publications</Link>
+            </li>
             <li>
               <Link to="/data">Data</Link>
             </li>
+            <li className="deliverables-menu">
+              Deliverables
+              <ul className="deliverables-drop-down">{deliverablesOptions}</ul>
+            </li>
             <li>
-                <Link to="/graphic-material">Graphic Materials</Link>
-              </li>
+              <Link to="/graphic-material">Graphic Materials</Link>
+            </li>
             <li>
-                <Link to="/press">Press</Link>
-              </li>
+              <Link to="/press">Press</Link>
+            </li>
             <li>
-                <Link to="/newsletter">Newsletter</Link>
-              </li>
-           
-              <li>
-                <Link to="/gallery">Gallery</Link>
-              </li>
+              <Link to="/newsletter">Newsletter</Link>
+            </li>
+
             <li>
-                <Link to="/for-silvia">For Silvia</Link>
-              </li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li>
+              <Link to="/for-silvia">For Silvia</Link>
+            </li>
               
           </ul>
         </nav>
 
         <style jsx="true">{`
+          .deliverables-drop-down {
+            display: none !important;
+            padding: 0 5px !important;
+          }
+          .deliverables-drop-down li {
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+          }
+          .deliverables-menu {
+            cursor: pointer;
+          }
+          .deliverables-options-mobile-wrap {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+          }
+          .deliverables-menu .downward-arrow-icon-true {
+            display: inline-block;
+            width: fit-content;
+            margin: 0;
+            transform: rotate(270deg);
+          }
+          .deliverables-menu .downward-arrow-icon-false {
+            display: inline-block;
+            width: fit-content;
+            margin: 0;
+            transform: rotate(90deg);
+          }
+          .deliverables-menu:hover > .deliverables-drop-down {
+            display: block !important;
+          }
+
           .mobile-nav {
             display: flex;
             justify-content: space-between;
@@ -163,15 +243,29 @@ class Header extends React.Component {
             margin: 10px;
           }
           @media (min-width: 1200px) {
+            .deliverables-drop-down {
+              display: none !important;
+              padding: 0 5px !important;
+              position: absolute !important;
+              background: #fff;
+              z-index: 99;
+              box-shadow: 0px 0px 7px 0px rgb(185 185 185 / 30%);
+              top: 27px;
+            }
+
+            .deliverables-menu {
+              cursor: pointer;
+              position: relative;
+            }
             .mobile-nav {
               display: none;
             }
             .mobile-menu {
               display: none;
             }
-            .logo{
+            .logo {
               position: relative;
-              bottom: 10px
+              bottom: 10px;
             }
             .desktop-menu {
               display: flex;
@@ -180,10 +274,10 @@ class Header extends React.Component {
             .desktop-menu ul {
               display: flex;
               position: relative;
-              
             }
             .desktop-menu ul li {
               margin: 20px;
+              border-bottom: 2px solid transparent;
             }
             .desktop-menu ul li:hover {
               border-bottom: 2px solid #79a43d;
@@ -195,4 +289,26 @@ class Header extends React.Component {
   }
 }
 
-export default Header
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        allWordpressPost {
+          edges {
+            node {
+              categories {
+                name
+              }
+              title
+              excerpt
+              content
+              slug
+              id
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Header site={data.allWordpressPost} />}
+  />
+)
