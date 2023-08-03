@@ -192,6 +192,9 @@ class Header extends React.Component {
             justify-content: space-between;
             width: 90%;
           }
+          .deliverables-options-mobile-wrap span {
+            color: black !important;
+          }
           .deliverables-menu .downward-arrow-icon-true {
             display: inline-block;
             width: fit-content;
